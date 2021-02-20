@@ -1,0 +1,29 @@
+{
+  "name": "dshah1901.github.io",
+  "version": "1.0.0",
+  "description": "DhvaniShah Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dshah1901/dshah1901.github.io.git"
+  },
+  "keywords": [
+    "Dhvani",
+    "Shah",
+    "Dhvani",
+    "Shah",
+    "Portfolio"
+  ],
+  "author": "Dhvani",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dshah1901/dshah1901.github.io/issues"
+  },
+  "homepage": "https://github.com/dshah1901/dshah1901.github.io#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
