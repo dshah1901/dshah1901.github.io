@@ -1,0 +1,39 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  // This defines what 1rem is
+  font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+}
+
+body {
+  box-sizing: border-box;
+  background-color: rgb(231, 231, 231);
+}
+
+::selection {
+  background-color: $colour-primary-dark;
+  color: $colour-white;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+p {
+  margin: 10px 0;
+}
+
+img {
+  width: 100%;
+}
