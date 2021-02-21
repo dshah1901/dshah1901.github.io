@@ -14,7 +14,7 @@ body {
   line-height: 1.6; }
 
 ::selection {
-  background-color: #0a192f;
+  background-color: #64ffda;
   color: #fff; }
 
 ul {
@@ -64,7 +64,7 @@ img {
 
 .header {
   background: no-repeat center center/cover;
-  height: 95vh;
+  height: 93vh;
   background-image: linear-gradient(to bottom, rgba(10, 25, 47, 0.7) 50%, rgba(0, 0, 0, 0.8)), url("../images/hero.jfif");
   background-size: cover;
   background-position: top;
@@ -88,7 +88,8 @@ img {
         padding: 0 2rem;
         font-size: 3.5rem;
         font-family: "Great Vibes", cursive;
-        color: #64ffda; }
+        color: #64ffda;
+        padding-top: 1rem; }
       .header .navbar__content ul {
         display: flex;
         font-family: "Montserrat", sans-serif; }
@@ -96,7 +97,12 @@ img {
           padding: 2rem 4rem;
           letter-spacing: 0.6px; }
           .header .navbar__content ul li a {
-            color: #fff; }
+            color: #fff;
+            transition: all 0.3s;
+            padding-bottom: 0.5rem; }
+            .header .navbar__content ul li a:hover {
+              color: #bdbdbd;
+              border-bottom: 3px solid #64ffda; }
 
 .showcase__content {
   position: absolute;
