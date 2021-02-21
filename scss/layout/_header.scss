@@ -21,6 +21,7 @@
     z-index: 1030;
 
     &__content {
+      margin: 0;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -28,7 +29,7 @@
 
       &--logo {
         display: inline-block;
-        padding: 2rem;
+        padding: 0 2rem;
         font-size: 3.5rem;
         font-family: $cursive-font;
         color: $colour-secondary;
@@ -50,5 +51,36 @@
 }
 
 .showcase {
-  visibility: hidden;
+  &__content {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    .heading-primary {
+      &--name {
+        padding: 2rem 0;
+      }
+
+      &--sub {
+        padding-bottom: 1rem;
+      }
+      &--description {
+        padding: 1.5rem 7rem;
+      }
+    }
+  }
+
+  &__fav {
+    color: $colour-medium-grey;
+    display: block;
+    margin-top: 62rem;
+    text-align: center;
+    cursor: pointer;
+    &:hover {
+      color: $colour-white;
+      transform: translateY(4px);
+    }
+  }
 }

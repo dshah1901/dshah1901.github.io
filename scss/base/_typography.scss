@@ -5,23 +5,23 @@
 
   &--name {
     display: block;
-    font-weight: 400;
-    font-size: 4.5rem;
+    font-weight: 300;
+    font-size: 7rem;
     color: $colour-white;
-    letter-spacing: 0.9rem;
+    letter-spacing: 2rem;
   }
   &--sub {
     display: block;
     font-weight: 300;
-    font-size: 1.4rem;
-    color: $colour-medium-grey;
-    letter-spacing: 3px;
+    font-size: 2.2rem;
+    color: $colour-light-grey;
+    letter-spacing: 2.4px;
   }
   &--description {
     display: block;
-    font-weight: 200;
-    font-size: 0.8rem;
-    color: $colour-light-grey;
+    font-weight: 300;
+    font-size: 1.5rem;
+    color: $colour-medium-grey;
     letter-spacing: 5px;
   }
 }
