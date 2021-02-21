@@ -3,10 +3,11 @@
   height: 93vh;
   background-image: linear-gradient(
       to bottom,
-      rgba($colour-primary-dark, 0.7) 50%,
+      rgba($colour-primary-dark, 0.8) 50%,
       rgba($colour-black, 0.8)
     ),
     url("../images/hero.jfif");
+
   background-size: cover;
   background-position: top;
   background-attachment: fixed;
@@ -47,8 +48,9 @@
             transition: all 0.3s;
             padding-bottom: 0.5rem;
 
-            &:hover {
-              color: $colour-medium-grey;
+            &:hover,
+            &.current {
+              color: $colour-secondary;
               border-bottom: 3px solid $colour-secondary;
             }
           }
@@ -68,7 +70,7 @@
 
     .heading-primary {
       &--name {
-        padding: 2rem 0;
+        padding: 5rem 0 3rem 0;
       }
 
       &--sub {
