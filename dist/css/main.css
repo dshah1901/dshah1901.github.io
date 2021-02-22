@@ -97,12 +97,37 @@ img {
           padding: 2rem 4rem;
           letter-spacing: 0.6px; }
           .header .navbar__content ul li a {
+            padding-bottom: 0.5rem;
             color: #ffff;
-            transition: all 0.3s;
-            padding-bottom: 0.5rem; }
+            position: relative;
+            text-transform: uppercase;
+            text-decoration: none;
+            padding-bottom: 8px; }
+            .header .navbar__content ul li a:before, .header .navbar__content ul li a:after {
+              content: "";
+              position: absolute;
+              bottom: 2px;
+              left: 0;
+              right: 0;
+              height: 2px;
+              background-color: #67aeca; }
+            .header .navbar__content ul li a:before {
+              opacity: 0;
+              transform: translateY(8px);
+              transition: transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s; }
+            .header .navbar__content ul li a:after {
+              opacity: 0;
+              transform: translateY(4px);
+              transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s; }
+            .header .navbar__content ul li a:hover:before, .header .navbar__content ul li a:hover:after, .header .navbar__content ul li a.current:before, .header .navbar__content ul li a.current:after, .header .navbar__content ul li a:focus:before, .header .navbar__content ul li a:focus:after {
+              opacity: 1;
+              transform: translateY(0); }
+            .header .navbar__content ul li a:hover:before, .header .navbar__content ul li a.current:before, .header .navbar__content ul li a:focus:before {
+              transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s; }
+            .header .navbar__content ul li a:hover:after, .header .navbar__content ul li a.current:after, .header .navbar__content ul li a:focus:after {
+              transition: transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s 0.2s; }
             .header .navbar__content ul li a:hover, .header .navbar__content ul li a.current {
-              color: #67aeca;
-              border-bottom: 3px solid #67aeca; }
+              color: #67aeca; }
 
 .showcase__content {
   position: absolute;
