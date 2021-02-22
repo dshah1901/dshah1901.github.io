@@ -53,6 +53,40 @@ img {
     color: #bdbdbd;
     letter-spacing: 5px; }
 
+.heading-secondary {
+  display: block;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 6rem;
+  letter-spacing: 2rem;
+  background-image: linear-gradient(to bottom, #0a192f, #1e7597);
+  -webkit-background-clip: text;
+  color: transparent; }
+
+.underline a {
+  color: #ffff;
+  transition: ease-in-out 0.25s; }
+  .underline a:hover {
+    color: #b6eaff; }
+
+.underline > a:before {
+  content: "";
+  position: absolute;
+  width: 56%;
+  height: 3px;
+  bottom: 19rem;
+  left: 27rem;
+  background: #b6eaff;
+  visibility: hidden;
+  border-radius: 5px;
+  transform: scaleX(0);
+  transition: 0.25s 0.25s linear; }
+
+.underline > a:hover:before,
+.underline > a:focus:before {
+  visibility: visible;
+  transform: scaleX(1); }
+
 .container {
   margin: auto;
   /* To push it to the middle */
@@ -61,6 +95,41 @@ img {
   padding: 0 20px;
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory; }
+
+.u-center-text {
+  text-align: center !important; }
+
+.u-underline-text {
+  border-bottom: 1px solid #1e7597; }
+
+.u-underline-text-hover {
+  border-bottom: 1.5px solid #1e7597;
+  border-top: 1.5px solid #1e7597;
+  transition: ease-in-out 0.25s; }
+  .u-underline-text-hover:hover {
+    border-bottom: 1.5px solid #1e7597;
+    border-top: 1.5px solid #1e7597; }
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem !important; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem !important; }
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem !important; }
+
+.u-margin-top-small {
+  margin-top: 2rem !important; }
+
+.u-margin-top-medium {
+  margin-top: 4rem !important; }
+
+.u-margin-top-big {
+  margin-top: 8rem !important; }
+
+.u-margin-top-huge {
+  margin-top: 10rem !important; }
 
 .header {
   background: no-repeat center center/cover;
@@ -151,3 +220,16 @@ img {
   .showcase__fav:hover {
     color: #ffff;
     transform: translateY(4px); }
+
+#about .about__content {
+  max-width: 900px;
+  margin: auto; }
+  #about .about__content p {
+    font-size: 2rem;
+    font-family: "Montserrat", sans-serif; }
+
+#about .heading-secondary:hover {
+  transform: scale(1.01); }
+
+.section-about {
+  padding: 10rem 0; }

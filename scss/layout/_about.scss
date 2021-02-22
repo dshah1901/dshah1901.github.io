@@ -1,0 +1,15 @@
+#about {
+  .about__content {
+    max-width: 900px;
+    margin: auto;
+    p {
+      font-size: 2rem;
+      font-family: $content-font;
+    }
+  }
+  .heading-secondary {
+    &:hover {
+      transform: scale(1.01);
+    }
+  }
+}

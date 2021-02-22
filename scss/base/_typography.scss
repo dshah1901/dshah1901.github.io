@@ -25,3 +25,46 @@
     letter-spacing: 5px;
   }
 }
+
+.heading-secondary {
+  display: block;
+  font-family: $sans-serif-font;
+  font-weight: 300;
+  font-size: 6rem;
+  letter-spacing: 2rem;
+  background-image: linear-gradient(
+    to bottom,
+    $colour-primary-dark,
+    $colour-secondary-blue-dark
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.underline {
+  a {
+    color: $colour-white;
+    transition: ease-in-out 0.25s;
+    &:hover {
+      color: $colour-secondary-blue-light;
+    }
+  }
+  & > a:before {
+    content: "";
+    position: absolute;
+    width: 56%;
+    height: 3px;
+    bottom: 19rem;
+    left: 27rem;
+    background: $colour-secondary-blue-light;
+    visibility: hidden;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: 0.25s 0.25s linear;
+  }
+  & > a:hover:before,
+  & > a:focus:before {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+}
