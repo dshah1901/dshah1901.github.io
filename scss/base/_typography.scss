@@ -41,30 +41,10 @@
   color: transparent;
 }
 
-.underline {
-  a {
-    color: $colour-white;
-    transition: ease-in-out 0.25s;
-    &:hover {
-      color: $colour-secondary-blue-light;
-    }
-  }
-  & > a:before {
-    content: "";
-    position: absolute;
-    width: 56%;
-    height: 3px;
-    bottom: 19rem;
-    left: 27rem;
-    background: $colour-secondary-blue-light;
-    visibility: hidden;
-    border-radius: 5px;
-    transform: scaleX(0);
-    transition: 0.25s 0.25s linear;
-  }
-  & > a:hover:before,
-  & > a:focus:before {
-    visibility: visible;
-    transform: scaleX(1);
-  }
+.heading-tertiary {
+  font-family: $sans-serif-font;
+  font-size: 3rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: initial;
 }

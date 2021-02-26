@@ -126,15 +126,17 @@
     }
   }
 
-  &__fav {
-    color: $colour-medium-grey;
-    display: block;
-    margin-top: 62rem;
-    text-align: center;
-    cursor: pointer;
-    &:hover {
-      color: $colour-white;
-      transform: translateY(4px);
+  &__arrow {
+    &--fav {
+      color: $colour-medium-grey;
+      margin-top: 75vh;
+      display: block;
+      text-align: center;
+      cursor: pointer;
+      &:hover {
+        color: $colour-white;
+        transform: translateY(4px);
+      }
     }
   }
 }

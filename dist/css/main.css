@@ -63,29 +63,12 @@ img {
   -webkit-background-clip: text;
   color: transparent; }
 
-.underline a {
-  color: #ffff;
-  transition: ease-in-out 0.25s; }
-  .underline a:hover {
-    color: #b6eaff; }
-
-.underline > a:before {
-  content: "";
-  position: absolute;
-  width: 56%;
-  height: 3px;
-  bottom: 19rem;
-  left: 27rem;
-  background: #b6eaff;
-  visibility: hidden;
-  border-radius: 5px;
-  transform: scaleX(0);
-  transition: 0.25s 0.25s linear; }
-
-.underline > a:hover:before,
-.underline > a:focus:before {
-  visibility: visible;
-  transform: scaleX(1); }
+.heading-tertiary {
+  font-family: "Lato", sans-serif;
+  font-size: 3rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: initial; }
 
 .container {
   margin: auto;
@@ -102,13 +85,17 @@ img {
 .u-underline-text {
   border-bottom: 1px solid #1e7597; }
 
-.u-underline-text-hover {
+.u-border-text {
   border-bottom: 1.5px solid #1e7597;
   border-top: 1.5px solid #1e7597;
   transition: ease-in-out 0.25s; }
-  .u-underline-text-hover:hover {
-    border-bottom: 1.5px solid #1e7597;
-    border-top: 1.5px solid #1e7597; }
+
+.bottom-line {
+  height: 2px;
+  width: 6rem;
+  background: #d9514eff;
+  display: block;
+  margin: 0 auto 1rem auto; }
 
 .u-margin-bottom-small {
   margin-bottom: 1.5rem !important; }
@@ -124,6 +111,9 @@ img {
 
 .u-margin-top-medium {
   margin-top: 4rem !important; }
+
+.u-margin-top-medium2 {
+  margin-top: 6rem !important; }
 
 .u-margin-top-big {
   margin-top: 8rem !important; }
@@ -211,25 +201,49 @@ img {
   .showcase__content .heading-primary--description {
     padding: 1.5rem 7rem; }
 
-.showcase__fav {
+.showcase__arrow--fav {
   color: #bdbdbd;
+  margin-top: 75vh;
   display: block;
-  margin-top: 62rem;
   text-align: center;
   cursor: pointer; }
-  .showcase__fav:hover {
+  .showcase__arrow--fav:hover {
     color: #ffff;
     transform: translateY(4px); }
 
-#about .about__content {
+.about__content {
   max-width: 900px;
   margin: auto; }
-  #about .about__content p {
+  .about__content p {
     font-size: 2rem;
     font-family: "Montserrat", sans-serif; }
 
-#about .heading-secondary:hover {
-  transform: scale(1.01); }
+.about__heading:hover {
+  transform: scale(1.013); }
+
+.about .skills {
+  max-width: 600px;
+  margin: 2rem auto;
+  display: inline-block;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  grid-template-columns: repeat(4, 1fr); }
+  .about .skills__images {
+    margin: auto; }
+    .about .skills__images img {
+      padding: 0.5rem;
+      margin: 0.45rem;
+      width: 7rem;
+      filter: grayscale(100%);
+      transition: all 0.3s; }
+      .about .skills__images img:hover {
+        filter: grayscale(0%);
+        transform: scale(1.05); }
 
 .section-about {
+  padding: 10rem 0; }
+
+.section-experience {
+  background: #d8d8d8;
   padding: 10rem 0; }
