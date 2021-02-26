@@ -20,7 +20,7 @@
     right: 10rem;
     left: 0;
     z-index: 1030;
-
+    background: rgba($colour-primary-dark, 0.9);
     &__content {
       margin: 0;
       display: flex;
@@ -139,4 +139,8 @@
       }
     }
   }
+}
+
+.navbar.top {
+  background: transparent;
 }

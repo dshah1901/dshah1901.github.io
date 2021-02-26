@@ -10,14 +10,12 @@
       padding-top: 50px;
       background: $colour-dark-grey;
       .content {
-        box-shadow: 0 0.1rem 4rem rgba($colour-black, 0.2);
+        box-shadow: 0 0.1rem 4rem rgba($colour-dark-grey, 0.3);
         border-radius: 4px;
         position: relative;
         bottom: 0;
         right: 0.5rem;
         width: 75rem;
-        border: $colour-black solid 1px;
-
         background: $colour-light-grey;
         transform: translate(50px, 0);
 

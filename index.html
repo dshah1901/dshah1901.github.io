@@ -26,9 +26,9 @@
     <title>Dhvani Shah | Web Dev, Machine Learning and UI/UX Enthusiast</title>
   </head>
   <body>
-    <header class="header">
+    <header id="home" class="header">
       <div class="container">
-        <nav id="navbar" class="navbar">
+        <nav id="navbar" class="navbar top">
           <div class="container">
             <div class="navbar__content">
               <h1><a class="navbar__content--logo" href="index.html">D.</a></h1>
@@ -36,6 +36,7 @@
                 <li><a href="#home" class="current">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#cv">CV</a></li>
                 <li><a href="#contact">Contact</a></li>
               </ul>
             </div>
@@ -172,7 +173,9 @@
           </div>
         </div>
       </section>
-      <section class="section-cv cv">
+
+      <!-- CV -->
+      <section id="cv" class="section-cv cv">
         <div class="container">
           <div class="cv__content u-center-text">
             <h2
@@ -180,65 +183,80 @@
             >
               CHECK OUT MY CV !
             </h2>
-            <a href="#" class="btn btn--secondary">Grab A copy</a>
+            <a href="#" class="btn btn--secondary-light">Grab A copy</a>
           </div>
         </div>
       </section>
+
+      <!-- Projects -->
       <section id="projects" class="section-projects">
         <div class="container">
           <div class="u-center-text">
-            <h2 class="experience__heading heading-secondary u-border-text">
+            <h2
+              class="experience__heading heading-secondary u-border-text u-margin-bottom-small"
+            >
               My Work
             </h2>
           </div>
-          <p class="text u-center-text">Check out some of my projects</p>
+          <p class="text u-center-text u-margin-bottom-medium">
+            Check out some of my projects
+          </p>
           <div class="items">
             <div class="item">
               <div class="item-img">
-                <img src="./dist/images/nao.jpg" alt="" />
+                <img src="./dist/images/project1.jpg" alt="Personal Website" />
               </div>
               <div class="item-text">
                 <div class="item-text-wrap">
                   <p class="item-text-category">Front End</p>
                   <h2 class="item-text-title">This Website!</h2>
+                  <a
+                    href="https://github.com/dshah1901/dshah1901.github.io"
+                    target="_blank"
+                    ><i class="u-margin-top-small fab fa-github fa-3x"></i
+                  ></a>
                 </div>
               </div>
             </div>
             <div class="item">
               <div class="item-img">
-                <img src="./dist/images/nao2.jpg" alt="" />
+                <img src="./dist/images/soon.jpg" alt="" />
               </div>
               <div class="item-text">
                 <div class="item-text-wrap">
-                  <p class="item-text-category">UI/UX</p>
-                  <h2 class="item-text-title">World Experience</h2>
+                  <p class="item-text-category">Project 2</p>
+                  <h2 class="item-text-title">Coming soon</h2>
                 </div>
               </div>
             </div>
             <div class="item">
               <div class="item-img">
-                <img src="./dist/images/cv.jfif" alt="" />
+                <img src="./dist/images/soon.jpg" alt="" />
               </div>
               <div class="item-text">
                 <div class="item-text-wrap">
-                  <p class="item-text-category">UI/UX</p>
-                  <h2 class="item-text-title">World Experience</h2>
+                  <p class="item-text-category">Project 3</p>
+                  <h2 class="item-text-title">Coming soon</h2>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+
+      <!-- Contact Form -->
       <section class="u-center-text section-contactform" id="contact">
         <div class="container">
           <div class="u-center-text">
-            <h2 class="experience__heading heading-secondary u-border-text">
+            <h2
+              class="experience__heading heading-secondary u-border-text u-margin-bottom-small"
+            >
               Contact Me
             </h2>
           </div>
-          <p class="text u-center-text">
-            Feel free to drop an email if you have any opputunity/project in
-            mind or just want to chat!
+          <p class="text u-center-text u-margin-bottom-big">
+            Feel free to drop an email if you have any project in mind or just
+            want to chat!
           </p>
           <form action="https://formspree.io/f/xwkwdpyn" method="POST">
             <div class="form-control">
@@ -257,7 +275,7 @@
             </div>
 
             <button
-              class="btn btn--secondary"
+              class="btn btn--secondary-dark u-margin-top-small"
               type="submit"
               value="Send Message"
             >
@@ -267,6 +285,31 @@
         </div>
       </section>
     </main>
+
+    <!-- Footer -->
+    <footer id="main-footer">
+      <div class="up">
+        <a href="#home"><i class="fas fa-3x fa-chevron-up"></i></a>
+      </div>
+      <div class="text footer-content container">
+        <p>Coded with ❤ by Dhvani Shah, 2021</p>
+        <div class="social">
+          <i class="fas fa-2x fa-envelope"></i>
+          <i class="fab fa-2x fa-linkedin-in"></i>
+          <i class="fab fa-2x fa-github"></i>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- JavaScript -->
+    <script src="./dist/js/index.js" charset="utf-8"></script>
     <script src="./dist/js/wave.js"></script>
   </body>
 </html>

@@ -1,0 +1,36 @@
+#main-footer {
+  background: $colour-primary-dark;
+  color: #fff;
+  height: 12rem;
+  letter-spacing: 2px;
+
+  .up {
+    cursor: pointer;
+    text-align: center;
+    padding: 1rem 0 0 0;
+    a {
+      color: $colour-medium-grey;
+      transition: all 0.25s;
+      &:hover {
+        color: $colour-white;
+        transform: translate(1rem);
+      }
+    }
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+
+    .social .fab,
+    .fas {
+      padding: 0 2rem;
+      &:hover {
+        color: $colour-secondary;
+        cursor: pointer;
+      }
+    }
+  }
+}

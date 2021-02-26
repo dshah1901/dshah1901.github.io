@@ -65,10 +65,16 @@
     border: 1px solid $colour-white;
   }
 
-  &--secondary {
+  &--secondary-dark {
     background-color: transparent;
-    color: $colour-secondary-red;
-    border: 1.5px solid $colour-secondary-red;
+    color: $colour-secondary-blue-dark;
+    border: 1.5px solid $colour-secondary-blue-dark;
+  }
+
+  &--secondary-light {
+    background-color: transparent;
+    color: $colour-secondary-blue;
+    border: 1.5px solid $colour-secondary-blue;
   }
 
   &--dark {
