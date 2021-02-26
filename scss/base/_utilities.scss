@@ -16,8 +16,8 @@
 }
 
 .u-border-text {
+  display: inline-block;
   border-bottom: 1.5px solid $colour-secondary-blue-dark;
-  border-top: 1.5px solid $colour-secondary-blue-dark;
   transition: ease-in-out 0.25s;
 }
 
@@ -28,6 +28,7 @@
   display: block;
   margin: 0 auto 1rem auto;
 }
+
 .u-margin-bottom-small {
   margin-bottom: 1.5rem !important;
 }

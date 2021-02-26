@@ -1,0 +1,90 @@
+.timeline {
+  ul {
+    padding: 2rem 0;
+    li {
+      position: relative;
+      width: 6px;
+      margin: 0 13rem;
+      padding-bottom: 1rem;
+      border-radius: 4px;
+      padding-top: 50px;
+      background: $colour-dark-grey;
+      .content {
+        box-shadow: 0 1.5rem 4rem rgba($colour-black, 0.2);
+        border-radius: 4px;
+        position: relative;
+        bottom: 0;
+        right: 0.5rem;
+        width: 75rem;
+        border: $colour-black solid 1px;
+
+        background: $colour-light-grey;
+        transform: translate(50px, 0);
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 2.2rem;
+          width: 0;
+          height: 0;
+          border-style: solid;
+          left: -2.3rem;
+          border-width: 8px 0 8px 16px;
+          border-color: transparent transparent transparent $colour-primary-dark;
+        }
+        .text {
+          padding: 2rem;
+          .date {
+            color: $colour-dark-grey;
+            display: block;
+            font-size: 1.5rem;
+            font-family: $content-font;
+            font-weight: 300;
+          }
+          .title {
+            font-size: 2.8rem;
+            font-weight: 400;
+          }
+          .company {
+            font-size: 2.2rem;
+            font-weight: 400;
+            color: $colour-darkest-grey;
+          }
+        }
+
+        .image {
+          text-align: center;
+          padding: 0.5rem 2rem 4rem 2rem;
+          img {
+            width: 55rem;
+            outline-offset: 1rem;
+            transition: all 0.3s;
+            border-radius: 2px;
+
+            &:hover {
+              outline: 0.5rem solid $colour-secondary-red;
+              transform: scale(1.02) translateY(-0.5rem);
+            }
+          }
+        }
+        p {
+          font-family: $content-font;
+          font-size: 1.5rem;
+          line-height: 1.9;
+        }
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 6.8rem;
+        width: 25px;
+        height: 25px;
+        background: $colour-primary-dark;
+        transform: translateX(-50%);
+        border-radius: 50%;
+      }
+    }
+  }
+}

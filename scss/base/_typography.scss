@@ -29,6 +29,7 @@
 .heading-secondary {
   display: block;
   font-family: $sans-serif-font;
+  text-transform: uppercase;
   font-weight: 300;
   font-size: 6rem;
   letter-spacing: 2rem;
@@ -38,7 +39,12 @@
     $colour-secondary-blue-dark
   );
   -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
+
+  &:hover {
+    transform: scale(1.013);
+  }
 }
 
 .heading-tertiary {
