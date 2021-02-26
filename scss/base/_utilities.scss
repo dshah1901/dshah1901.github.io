@@ -29,6 +29,56 @@
   margin: 0 auto 1rem auto;
 }
 
+.btn {
+  &,
+  &:link,
+  &:visited {
+    font-size: 1.7rem;
+    font-family: $content-font;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 3rem;
+    display: inline-block;
+    border-radius: 4px;
+    transition: all 0.2s;
+    position: relative;
+
+    //Change for the <button> element
+    cursor: pointer;
+  }
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba($colour-black, 0.2);
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba($colour-black, 0.2);
+  }
+
+  &--light {
+    background-color: transparent;
+    color: $colour-white;
+    border: 1px solid $colour-white;
+  }
+
+  &--secondary {
+    background-color: transparent;
+    color: $colour-secondary-red;
+    border: 1.5px solid $colour-secondary-red;
+  }
+
+  &--dark {
+    padding: 1rem 1.5rem;
+    background-color: transparent;
+    color: $colour-dark-grey;
+    border: 1.5px solid $colour-dark-grey;
+  }
+}
+
 .u-margin-bottom-small {
   margin-bottom: 1.5rem !important;
 }

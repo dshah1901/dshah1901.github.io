@@ -101,6 +101,43 @@ img {
   display: block;
   margin: 0 auto 1rem auto; }
 
+.btn, .btn:link, .btn:visited {
+  font-size: 1.7rem;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 3rem;
+  display: inline-block;
+  border-radius: 4px;
+  transition: all 0.2s;
+  position: relative;
+  cursor: pointer; }
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+
+.btn:active, .btn:focus {
+  outline: none;
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+
+.btn--light {
+  background-color: transparent;
+  color: #ffff;
+  border: 1px solid #ffff; }
+
+.btn--secondary {
+  background-color: transparent;
+  color: #d9514eff;
+  border: 1.5px solid #d9514eff; }
+
+.btn--dark {
+  padding: 1rem 1.5rem;
+  background-color: transparent;
+  color: #777;
+  border: 1.5px solid #777; }
+
 .u-margin-bottom-small {
   margin-bottom: 1.5rem !important; }
 
@@ -253,7 +290,7 @@ img {
     padding-top: 50px;
     background: #777; }
     .timeline ul li .content {
-      box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+      box-shadow: 0 0.1rem 4rem rgba(0, 0, 0, 0.2);
       border-radius: 4px;
       position: relative;
       bottom: 0;
@@ -313,9 +350,24 @@ img {
       transform: translateX(-50%);
       border-radius: 50%; }
 
+.cv {
+  padding-top: 1rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(10, 25, 47, 0.7)), url("../images/cv.jfif");
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed; }
+  .cv__content--heading {
+    color: #ffff;
+    font-size: 4rem;
+    font-weight: 300;
+    letter-spacing: 1rem; }
+
 .section-about {
   padding: 8rem 0; }
 
 .section-experience {
   background: #dddddd;
+  padding: 6rem 0; }
+
+.section-cv {
   padding: 6rem 0; }

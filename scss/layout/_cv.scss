@@ -1,0 +1,20 @@
+.cv {
+  padding-top: 1rem;
+  background-image: linear-gradient(
+      rgba($colour-black, 0.8),
+      rgba($colour-primary-dark, 0.7)
+    ),
+    url("../images/cv.jfif");
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+
+  &__content {
+    &--heading {
+      color: $colour-white;
+      font-size: 4rem;
+      font-weight: 300;
+      letter-spacing: 1rem;
+    }
+  }
+}
