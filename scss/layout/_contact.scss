@@ -1,0 +1,47 @@
+#contact {
+  .form-control {
+    position: relative;
+    width: 300px;
+    margin: 4rem auto;
+
+    & input {
+      background-color: transparent;
+      border: 0;
+      border-bottom: 2px $colour-secondary-blue solid;
+      display: block;
+      width: 100%;
+      padding: 15px 0;
+      font-size: 1.7rem;
+      font-family: $content-font;
+      color: $colour-secondary-blue-dark;
+
+      &:focus,
+      &:valid {
+        outline: 0;
+        border-bottom-color: $colour-secondary-blue-dark;
+      }
+
+      &:focus + label span,
+      &:valid + label span {
+        color: $colour-secondary-blue-dark;
+        transform: translateY(-30px);
+      }
+    }
+
+    & label {
+      position: absolute;
+      top: 15px;
+      font-size: 1.7rem;
+      color: $colour-secondary-blue;
+      font-family: $content-font;
+      left: 0;
+      pointer-events: none;
+      & span {
+        display: inline-block;
+        font-size: 1.5rem;
+        min-width: 5px;
+        transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      }
+    }
+  }
+}
