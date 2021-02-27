@@ -38,5 +38,5 @@ window.onscroll = function(){
 
 //Changing active class
 
- 
-       
+
+window.slide = new SlideNav();

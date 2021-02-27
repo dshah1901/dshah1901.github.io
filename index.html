@@ -22,7 +22,9 @@
     />
 
     <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="dist/css/main.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Dhvani Shah | Web Dev, Machine Learning and UI/UX Enthusiast</title>
   </head>
   <body>
@@ -68,10 +70,14 @@
       <!-- About -->
       <section id="about" class="about section-about">
         <div class="container">
-          <div class="u-center-text">
+          <div class="u-center-text" data-aos="fade-down" data-aos-delay="300">
             <h2 class="heading-secondary u-border-text">ABOUT ME</h2>
           </div>
-          <div class="about__content u-center-text">
+          <div
+            class="about__content u-center-text"
+            data-aos="fade-up"
+            data-aos-delay="600"
+          >
             <p class="u-margin-top-medium">
               Hey! I am Dhvani Shah, a Web Developer based in Auckland. My goal
               is to design and develop simple, beautiful, and pixel-perfect user
@@ -85,12 +91,20 @@
           </div>
 
           <!-- Skills -->
-          <div class="u-center-text u-margin-top-medium2">
+          <div
+            class="u-center-text u-margin-top-medium2"
+            data-aos="fade"
+            data-aos-delay="300"
+          >
             <h2 class="skills_heading heading-tertiary">
               Some Technologies I have worked with
             </h2>
           </div>
-          <div class="skills u-margin-top-medium">
+          <div
+            class="skills u-margin-top-medium"
+            data-aos="fade"
+            data-aos-delay="300"
+          >
             <div class="skills__images--html skills__images">
               <img src="./dist/images/skills/html.png" alt="HTML" />
             </div>
@@ -134,12 +148,17 @@
       <!-- Experience -->
       <section id="experience" class="experience section-experience">
         <div class="container">
-          <div class="u-center-text">
+          <div class="u-center-text" data-aos="fade-down" data-aos-delay="300">
             <h2 class="experience__heading heading-secondary u-border-text">
               My Journey
             </h2>
           </div>
-          <div class="timeline" id="timeline">
+          <div
+            class="timeline"
+            id="timeline"
+            data-aos="fade-up"
+            data-aos-delay="600"
+          >
             <ul>
               <li>
                 <div class="content">
@@ -180,10 +199,18 @@
           <div class="cv__content u-center-text">
             <h2
               class="cv__content--heading heading-tertiary u-margin-bottom-medium"
+              data-aos="flip-down"
+              data-aos-delay="300"
             >
               CHECK OUT MY CV !
             </h2>
-            <a href="#" class="btn btn--secondary-light">Grab A copy</a>
+            <a
+              href="#"
+              class="btn btn--secondary-light"
+              data-aos="zoom-in-up"
+              data-aos-delay="500"
+              >Grab A copy</a
+            >
           </div>
         </div>
       </section>
@@ -194,14 +221,20 @@
           <div class="u-center-text">
             <h2
               class="experience__heading heading-secondary u-border-text u-margin-bottom-small"
+              data-aos="fade-in"
+              data-aos-delay="300"
             >
               My Work
             </h2>
           </div>
-          <p class="text u-center-text u-margin-bottom-medium">
+          <p
+            class="text u-center-text u-margin-bottom-medium"
+            data-aos="fade-in"
+            data-aos-delay="350"
+          >
             Check out some of my projects
           </p>
-          <div class="items">
+          <div class="items" data-aos="flip-down" data-aos-delay="500">
             <div class="item">
               <div class="item-img">
                 <img src="./dist/images/project1.jpg" alt="Personal Website" />
@@ -250,15 +283,26 @@
           <div class="u-center-text">
             <h2
               class="experience__heading heading-secondary u-border-text u-margin-bottom-small"
+              data-aos="flip-down"
+              data-aos-delay="300"
             >
               Contact Me
             </h2>
           </div>
-          <p class="text u-center-text u-margin-bottom-big">
+          <p
+            class="text u-center-text u-margin-bottom-big"
+            data-aos="flip-down"
+            data-aos-delay="300"
+          >
             Feel free to drop an email if you have any project in mind or just
             want to chat!
           </p>
-          <form action="https://formspree.io/f/xwkwdpyn" method="POST">
+          <form
+            action="https://formspree.io/f/xwkwdpyn"
+            method="POST"
+            data-aos="fade"
+            data-aos-delay="400"
+          >
             <div class="form-control">
               <input type="text" name="name" required />
               <label for="name">Name</label>
@@ -317,6 +361,7 @@
     <script src="./dist/js/elevator.min.js"></script>
     <script src="./dist/js/index.js" charset="utf-8"></script>
     <script src="./dist/js/wave.js"></script>
+    <script src="./dist/js/nav.js"></script>
 
     <script>
       // Simple elevator usage.
@@ -325,6 +370,12 @@
         element: elementButton,
         mainAudio: "./dist/music/elevator.mp3", // Music from http://www.bensound.com/
         endAudio: "./dist/music/ding.mp3",
+      });
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: "true",
       });
     </script>
   </body>

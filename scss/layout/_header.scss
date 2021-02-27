@@ -21,6 +21,7 @@
     left: 0;
     z-index: 1030;
     background: rgba($colour-primary-dark, 0.9);
+    animation: fadeInQuick 3s;
     &__content {
       margin: 0;
       display: flex;
@@ -115,13 +116,16 @@
     .heading-primary {
       &--name {
         padding: 5rem 0 3rem 0;
+        animation: heading 2s;
       }
 
       &--sub {
         padding-bottom: 1rem;
+        animation: fadeInQuick 1.8s;
       }
       &--description {
         padding: 1.5rem 7rem;
+        animation: fadeInQuick 1.8s;
       }
     }
   }
@@ -133,6 +137,7 @@
       display: block;
       text-align: center;
       cursor: pointer;
+      animation: fadeInQuick 3s;
       &:hover {
         color: $colour-white;
         transform: translateY(4px);

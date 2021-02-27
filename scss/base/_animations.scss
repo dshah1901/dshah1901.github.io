@@ -1,0 +1,37 @@
+@keyframes heading {
+  0% {
+    opacity: 0;
+
+    margin-bottom: -20rem;
+  }
+  40% {
+    opacity: 1;
+    letter-spacing: 2.2rem;
+
+    margin-bottom: -20rem;
+  }
+  70% {
+    margin-bottom: -20rem;
+  }
+}
+
+@keyframes fadeInQuick {
+  0% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes opacitymid {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
