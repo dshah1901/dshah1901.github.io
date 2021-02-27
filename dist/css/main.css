@@ -519,23 +519,26 @@ img {
 #main-footer {
   background: #0a192f;
   color: #fff;
-  height: 12rem;
+  height: 16rem;
   letter-spacing: 2px; }
-  #main-footer .up {
+  #main-footer .elevator {
     cursor: pointer;
     text-align: center;
-    padding: 1rem 0 0 0; }
-    #main-footer .up a {
+    padding: 1rem 0; }
+    #main-footer .elevator a {
       color: #bdbdbd;
       transition: all 0.25s; }
-      #main-footer .up a:hover {
+      #main-footer .elevator a:hover {
         color: #ffff;
         transform: translate(1rem); }
+        #main-footer .elevator a:hover p {
+          opacity: 1; }
+      #main-footer .elevator a p {
+        opacity: 0; }
   #main-footer .footer-content {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 5rem; }
+    justify-content: space-around;
+    align-items: center; }
     #main-footer .footer-content .social .fab,
     #main-footer .footer-content .fas {
       padding: 0 2rem; }
