@@ -539,11 +539,10 @@ img {
     display: flex;
     justify-content: space-around;
     align-items: center; }
-    #main-footer .footer-content .social .fab,
-    #main-footer .footer-content .fas {
-      padding: 0 2rem; }
-      #main-footer .footer-content .social .fab:hover,
-      #main-footer .footer-content .fas:hover {
+    #main-footer .footer-content .social a {
+      padding: 0 2rem;
+      color: #ffff; }
+      #main-footer .footer-content .social a:hover {
         color: #67aeca;
         cursor: pointer; }
 

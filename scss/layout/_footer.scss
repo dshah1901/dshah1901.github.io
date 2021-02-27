@@ -29,9 +29,9 @@
     justify-content: space-around;
     align-items: center;
 
-    .social .fab,
-    .fas {
+    .social a {
       padding: 0 2rem;
+      color: $colour-white;
       &:hover {
         color: $colour-secondary;
         cursor: pointer;
