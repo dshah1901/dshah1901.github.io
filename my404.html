@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="dist/images/favicon.png" />
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/b250254fd3.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@100;200;300;400;500;600;700;800;900&family=Great+Vibes&family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="dist/css/main.css" />
+    <style>
+      #navbar {
+        background: #0a192f;
+      }
+      .header {
+        background: url("./dist/images/404.gif") no-repeat center/ cover;
+        filter: grayscale(80%);
+      }
+
+      .showcase {
+        margin-top: 10vh;
+        padding: 5rem;
+        background-color: #0a192fbd;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+      .heading-secondary {
+        color: #fff;
+      }
+
+      .text {
+        color: rgb(206, 204, 204);
+        margin-bottom: 3rem;
+      }
+    </style>
+    <title>Dhvani Shah | Oops 404</title>
+  </head>
+  <body>
+    <header id="home" class="header">
+      <div class="container">
+        <nav id="navbar" class="navbar top">
+          <div class="container">
+            <div class="navbar__content">
+              <h1><a class="navbar__content--logo" href="index.html">D.</a></h1>
+              <ul class="brackets-animation">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#cv">CV</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="showcase">
+        <div class="container">
+          <h1 class="heading-secondary">404</h1>
+          <p class="text">Whoops, that page is gone. <br /></p>
+          <a class="btn btn--light" href="dshah439.github.io">Let's go home!</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Footer -->
+    <footer id="main-footer">
+      <div class="text footer-content container">
+        <p>Coded with ❤ by Dhvani Shah, 2021</p>
+        <div class="do-the-thing">
+          <div class="elevator">
+            <a href="#home"><i class="fas fa-3x fa-chevron-up"></i></a>
+            Back to Top
+          </div>
+        </div>
+        <div class="social">
+          <i class="fas fa-2x fa-envelope"></i>
+          <i class="fab fa-2x fa-linkedin-in"></i>
+          <i class="fab fa-2x fa-github"></i>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
