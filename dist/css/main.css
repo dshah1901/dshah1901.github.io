@@ -204,7 +204,7 @@ img {
         display: flex;
         font-family: "Montserrat", sans-serif; }
         .header .navbar__content ul li {
-          padding: 2rem 4rem;
+          padding: 2rem 2.5rem;
           letter-spacing: 0.6px; }
           .header .navbar__content ul li a {
             padding-bottom: 0.5rem;

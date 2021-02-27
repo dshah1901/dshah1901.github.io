@@ -1,3 +1,22 @@
+//Smooth Scrolling
+$('#navbar a, .btn, .showcase a').on('click', function (e) {
+  if (this.hash !== '') {
+    e.preventDefault();
+
+    const hash = this.hash;
+
+    $('html, body').animate(
+      {
+        scrollTop: $(hash).offset().top - 300,
+      },
+      1000
+    );
+  }
+});
+
+//, #main-footer a
+
+//Navbar Animation
 const navbar = document.getElementById('navbar');
 let scrolled = false;
 
@@ -17,19 +36,7 @@ window.onscroll = function(){
     }
 };
 
+//Changing active class
 
-//Smooth Scrolling
-$('#navbar a, .btn, .showcase a , #main-footer a').on('click', function (e) {
-  if (this.hash !== '') {
-    e.preventDefault();
-
-    const hash = this.hash;
-
-    $('html, body').animate(
-      {
-        scrollTop: $(hash).offset().top - 70,
-      },
-      1000
-    );
-  }
-});
+ 
+       
