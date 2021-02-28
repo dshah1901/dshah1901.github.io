@@ -90,7 +90,8 @@ img {
     letter-spacing: 1.5rem; }
     @media (max-width: 37.5em) {
       .heading-primary--name {
-        letter-spacing: 0.5rem; } }
+        letter-spacing: 0.5rem;
+        font-size: 7rem; } }
   .heading-primary--sub {
     display: block;
     font-weight: 300;
@@ -99,7 +100,8 @@ img {
     letter-spacing: 2.4px; }
     @media (max-width: 37.5em) {
       .heading-primary--sub {
-        letter-spacing: 0; } }
+        letter-spacing: 0;
+        font-size: 2rem; } }
   .heading-primary--description {
     display: block;
     font-weight: 300;
@@ -108,7 +110,8 @@ img {
     letter-spacing: 5px; }
     @media (max-width: 37.5em) {
       .heading-primary--description {
-        letter-spacing: 2px; } }
+        letter-spacing: 2px;
+        font-size: 1.2rem; } }
 
 .heading-secondary {
   display: block;
@@ -251,6 +254,10 @@ img {
       justify-content: space-between;
       align-items: center;
       font-size: 1.6rem; }
+      @media (max-width: 37.5em) {
+        .header .navbar__content {
+          flex-direction: column;
+          justify-content: center; } }
       .header .navbar__content--logo {
         display: inline-block;
         padding: 0 2rem;
@@ -258,19 +265,39 @@ img {
         font-family: "Great Vibes", cursive;
         color: #67aeca;
         padding-top: 1rem; }
+        @media (max-width: 37.5em) {
+          .header .navbar__content--logo {
+            font-size: 7rem; } }
       .header .navbar__content ul {
         display: flex;
         font-family: "Montserrat", sans-serif; }
+        @media (max-width: 37.5em) {
+          .header .navbar__content ul {
+            justify-content: space-between;
+            width: 95%; } }
         .header .navbar__content ul li {
           padding: 2rem 2.5rem;
           letter-spacing: 0.6px; }
+          @media (max-width: 37.5em) {
+            .header .navbar__content ul li {
+              padding: 0; } }
           .header .navbar__content ul li a {
-            padding-bottom: 0.5rem;
             color: #ffff;
             position: relative;
             text-transform: uppercase;
             text-decoration: none;
             padding-bottom: 8px; }
+            @media (max-width: 37.5em) {
+              .header .navbar__content ul li a span {
+                display: none; } }
+            .header .navbar__content ul li a .fas {
+              display: none; }
+              @media (max-width: 37.5em) {
+                .header .navbar__content ul li a .fas {
+                  display: initial;
+                  color: #bdbdbd;
+                  text-align: center;
+                  font-size: 2.5rem; } }
             .header .navbar__content ul li a:before, .header .navbar__content ul li a:after {
               content: "";
               position: absolute;
