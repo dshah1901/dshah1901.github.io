@@ -1,88 +1,104 @@
-.timeline {
-  ul {
-    padding: 2rem 0;
-    li {
-      position: relative;
-      width: 6px;
-      margin: 0 13rem;
-      padding-bottom: 1rem;
-      border-radius: 4px;
-      padding-top: 50px;
-      background: $colour-dark-grey;
-      .content {
-        box-shadow: 0 0.1rem 4rem rgba($colour-dark-grey, 0.3);
-        border-radius: 4px;
-        position: relative;
-        bottom: 0;
-        right: 0.5rem;
-        width: 75rem;
-        background: $colour-light-grey;
-        transform: translate(50px, 0);
+.timeline-item {
+  padding: 3rem 2rem 2rem;
+  position: relative;
+  color: rgba(black, 0.7);
+  border-left: 3px solid rgba(black, 0.3);
+  max-width: 70rem;
+  margin: 0 auto;
+  @include respond(phone) {
+    border: none;
+  }
 
-        &::before {
-          content: "";
-          position: absolute;
-          top: 2.2rem;
-          width: 0;
-          height: 0;
-          border-style: solid;
-          left: -2.3rem;
-          border-width: 8px 0 8px 16px;
-          border-color: transparent transparent transparent $colour-primary-dark;
-        }
-        .text {
-          padding: 2rem;
-          .date {
-            color: $colour-dark-grey;
-            display: block;
-            font-size: 1.5rem;
-            font-family: $content-font;
-            font-weight: 300;
-          }
-          .title {
-            font-size: 2.8rem;
-            font-weight: 400;
-          }
-          .company {
-            font-size: 2.2rem;
-            font-weight: 400;
-            color: $colour-darkest-grey;
-          }
-        }
+  .timeline-content {
+    margin-left: 2rem;
+    padding: 2rem;
+    padding-top: 4rem;
+    box-shadow: 0 0.1rem 4rem rgba($colour-dark-grey, 0.3);
+    border-radius: 4px;
+    background: $colour-light-grey;
+    @include respond(phone) {
+      margin-left: 0;
+    }
 
-        .image {
-          text-align: center;
-          padding: 0.5rem 2rem 4rem 2rem;
-          img {
-            width: 55rem;
-            outline-offset: 1rem;
-            transition: all 0.3s;
-            border-radius: 2px;
-
-            &:hover {
-              outline: 0.5rem solid $colour-secondary-red;
-              transform: scale(1.02) translateY(-0.5rem);
-            }
-          }
-        }
-        p {
-          font-family: $content-font;
-          font-size: 1.5rem;
-          line-height: 1.9;
-        }
+    .timeline-text {
+      .title {
+        font-size: 2.8rem;
+        font-weight: 400;
       }
-
-      &::after {
-        content: "";
-        position: absolute;
-        left: 50%;
-        top: 6.8rem;
-        width: 25px;
-        height: 25px;
-        background: $colour-primary-dark;
-        transform: translateX(-50%);
-        border-radius: 50%;
+      .company {
+        font-size: 2.2rem;
+        font-weight: 400;
+        color: $colour-darkest-grey;
+      }
+      p {
+        font-family: $content-font;
+        font-size: 1.5rem;
+        line-height: 1.9;
       }
     }
+
+    .timeline-image {
+      text-align: center;
+      padding: 0.5rem 2rem 4rem 2rem;
+      margin-top: 3rem;
+      img {
+        width: 90%;
+        outline-offset: 1rem;
+        transition: all 0.3s;
+        border-radius: 2px;
+        @include respond(phone) {
+          width: 100%;
+        }
+
+        &:hover {
+          outline: 0.5rem solid $colour-secondary-red;
+          transform: scale(1.02) translateY(-0.5rem);
+        }
+      }
+    }
+  }
+
+  &::before {
+    content: attr(date-is);
+    display: block;
+    font-size: 1.5rem;
+    font-family: $content-font;
+    font-weight: 300;
+    position: absolute;
+    left: 6rem;
+    top: 4.6rem;
+    color: $colour-dark-grey;
+    @include respond(phone) {
+      left: 4rem;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    left: -1.6rem;
+    border-radius: 50%;
+    content: "";
+    border: 3px solid $colour-secondary-blue-dark;
+    background: white;
+    width: 3rem;
+    height: 3rem;
+    display: block;
+    top: 4.5rem;
+    transition: all 0.3s;
+    @include respond(phone) {
+      display: none;
+    }
+  }
+  &:hover::after {
+    border: 10px solid $colour-secondary-blue-dark;
+  }
+
+  &:last-child {
+    border-image: linear-gradient(
+        to bottom,
+        $colour-secondary-blue-dark 60%,
+        rgba(rgba(black, 0.3), 0)
+      )
+      1 100%;
   }
 }

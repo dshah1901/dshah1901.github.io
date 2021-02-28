@@ -3,6 +3,9 @@
   color: #fff;
   height: 16rem;
   letter-spacing: 2px;
+  @include respond(phone) {
+    height: 23rem;
+  }
 
   .elevator {
     cursor: pointer;
@@ -28,13 +31,21 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    @include respond(phone) {
+      flex-direction: column;
+    }
 
-    .social a {
-      padding: 0 2rem;
-      color: $colour-white;
-      &:hover {
-        color: $colour-secondary;
-        cursor: pointer;
+    .social {
+      @include respond(phone) {
+        padding: 2rem;
+      }
+      a {
+        padding: 0 2rem;
+        color: $colour-white;
+        &:hover {
+          color: $colour-secondary;
+          cursor: pointer;
+        }
       }
     }
   }
