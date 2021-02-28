@@ -2,14 +2,21 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1rem;
-  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+
+  @include respond(phone) {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 5rem;
+  }
 }
 
 .item {
   position: relative;
   background: $colour-secondary;
   overflow: hidden;
-
+  @include respond(phone) {
+    margin: auto;
+    width: 35rem;
+  }
   &::after {
     content: "";
     position: absolute;
