@@ -1,3 +1,18 @@
+/*
+ 
+0 - 600px    : Phone
+600 - 900px  : Tablet Portrait
+900 - 1200px : Tablet Landscape
+[1200 - 1800] is where our normal styles apply
+1800px +     : Big Desktop
+*/
+/*
+$breakpoint argument choices:
+  -phone
+  -tab-port
+  -tad-land
+  -big-desktop
+*/
 @keyframes heading {
   0% {
     opacity: 0;
@@ -32,6 +47,15 @@
 
 html {
   font-size: 62.5%; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   box-sizing: border-box;
@@ -56,7 +80,6 @@ img {
   width: 100%; }
 
 .heading-primary {
-  font-size: 4rem;
   font-family: "Lato", sans-serif;
   text-transform: uppercase; }
   .heading-primary--name {
@@ -65,18 +88,27 @@ img {
     font-size: 7rem;
     color: #ffff;
     letter-spacing: 1.5rem; }
+    @media (max-width: 37.5em) {
+      .heading-primary--name {
+        letter-spacing: 0.5rem; } }
   .heading-primary--sub {
     display: block;
     font-weight: 300;
     font-size: 2.2rem;
     color: #f4f4f4;
     letter-spacing: 2.4px; }
+    @media (max-width: 37.5em) {
+      .heading-primary--sub {
+        letter-spacing: 0; } }
   .heading-primary--description {
     display: block;
     font-weight: 300;
     font-size: 1.5rem;
     color: #bdbdbd;
     letter-spacing: 5px; }
+    @media (max-width: 37.5em) {
+      .heading-primary--description {
+        letter-spacing: 2px; } }
 
 .heading-secondary {
   display: block;
