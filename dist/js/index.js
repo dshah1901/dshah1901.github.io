@@ -7,7 +7,7 @@ $('#navbar a, .btn, .showcase a').on('click', function (e) {
 
     $('html, body').animate(
       {
-        scrollTop: $(hash).offset().top - 300,
+        scrollTop: $(hash).offset().top -150,
       },
       1000
     );
@@ -39,4 +39,3 @@ window.onscroll = function(){
 //Changing active class
 
 
-window.slide = new SlideNav();
