@@ -10,4 +10,31 @@
 
 ![demo](dist/images/screencapture-dshah1901-github-io.png)
 
-## ![GitHub Contributors Image](https://contrib.rocks/image?repo=dshah1901/dshah1901.github.io)
+## 🛠 Installation & Set Up
+
+1. Installing the node_modules
+
+   ```sh
+   npm install
+   ```
+
+## 🚀 Building and Running
+
+1. To compile the sass file
+
+   ```sh
+   npm run sass
+   ```
+
+   `
+   And save the .scss file.
+
+## Special Mentions
+
+1. <a href="https://www.udemy.com/course/50-projects-50-days/" target="_blank"> 50 Days 50 projects - Brad Traversy</a>
+
+2. <a href="https://www.udemy.com/course/advanced-css-and-sass/" target="_blank"> Advanced CSS and Sass - Jonas Schmedtmann </a>
+
+3. <a href="https://github.com/michalsnik/aos" target="_blank"> AOS (Animate On Scroll) </a>
+
+4. <a href="https://github.com/tholman/elevator.js" target="_blank"> Elevator </a>
