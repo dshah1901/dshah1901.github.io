@@ -26,7 +26,6 @@
    npm run sass
    ```
 
-   `
    And save the .scss file.
 
 ## Special Mentions
