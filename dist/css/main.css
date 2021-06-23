@@ -96,7 +96,7 @@ img {
   .heading-primary--sub {
     display: block;
     font-weight: 300;
-    font-size: 2.2rem;
+    font-size: 2rem;
     color: #f4f4f4;
     letter-spacing: 2.4px; }
     @media (max-width: 37.5em) {
@@ -106,7 +106,7 @@ img {
   .heading-primary--description {
     display: block;
     font-weight: 300;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: #bdbdbd;
     letter-spacing: 5px; }
     @media (max-width: 37.5em) {
@@ -346,6 +346,9 @@ img {
   .showcase__content .heading-primary--name {
     padding: 5rem 0 3rem 0;
     animation: heading 2s; }
+    @media (max-width: 37.5em) {
+      .showcase__content .heading-primary--name {
+        margin: 0; } }
   .showcase__content .heading-primary--sub {
     padding-bottom: 1rem;
     animation: fadeInQuick 1.8s; }
@@ -365,17 +368,21 @@ img {
     transform: translateY(4px); }
   @media (max-width: 37.5em) {
     .showcase__arrow--fav {
-      margin-top: 67rem; } }
+      display: none; } }
 
 .navbar.top {
   background: transparent; }
 
 .about__content {
   max-width: 900px;
+  padding: 0 5rem;
   margin: auto; }
   .about__content p {
     font-size: 2rem;
     font-family: "Montserrat", sans-serif; }
+    @media (max-width: 37.5em) {
+      .about__content p {
+        font-size: 1.5rem; } }
 
 .about .skills {
   max-width: 600px;
@@ -390,7 +397,7 @@ img {
   .about .skills__images {
     margin: auto; }
     .about .skills__images img {
-      padding: 0.6rem 0;
+      padding: 0.9rem 0;
       margin: 0.45rem;
       width: 7rem;
       filter: grayscale(100%);
@@ -498,6 +505,10 @@ img {
     .items {
       grid-template-columns: repeat(1, 1fr);
       grid-gap: 5rem; } }
+  @media (max-width: 56.25em) {
+    .items {
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 5rem; } }
 
 .item {
   position: relative;
@@ -507,6 +518,11 @@ img {
     .item {
       margin: auto;
       width: 35rem; } }
+  @media (max-width: 56.25em) {
+    .item {
+      margin: auto;
+      width: 45rem;
+      height: 25rem; } }
   .item::after {
     content: "";
     position: absolute;

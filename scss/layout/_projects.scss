@@ -7,6 +7,10 @@
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 5rem;
   }
+  @include respond(tab-port) {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 5rem;
+  }
 }
 
 .item {
@@ -16,6 +20,11 @@
   @include respond(phone) {
     margin: auto;
     width: 35rem;
+  }
+  @include respond(tab-port) {
+    margin: auto;
+    width: 45rem;
+    height: 25rem;
   }
   &::after {
     content: "";
@@ -41,7 +50,7 @@
     transform: scale(1.2);
   }
 
-  //Brin in the text on Hover
+  //Bring in the text on Hover
 
   &:hover &-text {
     opacity: 1;

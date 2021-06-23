@@ -154,6 +154,9 @@
       &--name {
         padding: 5rem 0 3rem 0;
         animation: heading 2s;
+        @include respond(phone) {
+          margin: 0;
+        }
       }
 
       &--sub {
@@ -182,7 +185,7 @@
       }
 
       @include respond(phone) {
-        margin-top: 67rem;
+        display: none;
       }
     }
   }

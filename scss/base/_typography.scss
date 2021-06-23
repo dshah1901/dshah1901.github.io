@@ -18,7 +18,7 @@
   &--sub {
     display: block;
     font-weight: 300;
-    font-size: 2.2rem;
+    font-size: 2rem;
     color: $colour-light-grey;
     letter-spacing: 2.4px;
     @include respond(phone) {
@@ -29,7 +29,7 @@
   &--description {
     display: block;
     font-weight: 300;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: $colour-medium-grey;
     letter-spacing: 5px;
     @include respond(phone) {

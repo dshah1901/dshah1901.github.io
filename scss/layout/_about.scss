@@ -1,10 +1,14 @@
 .about {
   &__content {
     max-width: 900px;
+    padding: 0 5rem;
     margin: auto;
     p {
       font-size: 2rem;
       font-family: $content-font;
+      @include respond(phone) {
+        font-size: 1.5rem;
+      }
     }
   }
   .skills {
@@ -20,7 +24,7 @@
     &__images {
       margin: auto;
       img {
-        padding: 0.6rem 0;
+        padding: 0.9rem 0;
         margin: 0.45rem;
         width: 7rem;
         filter: grayscale(100%);
