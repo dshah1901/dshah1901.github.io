@@ -10,9 +10,8 @@
     letter-spacing: 1.5rem;
 
     @include respond(phone) {
-      letter-spacing: 0.5rem;
       margin-top: 15rem;
-      font-size: 7rem;
+      font-size: 5rem;
     }
   }
   &--sub {
@@ -23,7 +22,7 @@
     letter-spacing: 2.4px;
     @include respond(phone) {
       letter-spacing: 0;
-      font-size: 2rem;
+      font-size: 1.5rem;
     }
   }
   &--description {
@@ -33,8 +32,8 @@
     color: $colour-medium-grey;
     letter-spacing: 5px;
     @include respond(phone) {
-      letter-spacing: 2px;
-      font-size: 1.2rem;
+      letter-spacing: 1px;
+      font-size: 1rem;
     }
   }
 }

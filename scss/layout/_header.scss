@@ -150,6 +150,10 @@
     transform: translate(-50%, -50%);
     text-align: center;
 
+    @include respond(phone) {
+      margin-top: 10rem;
+    }
+
     .heading-primary {
       &--name {
         padding: 5rem 0 3rem 0;

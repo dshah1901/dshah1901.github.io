@@ -15,6 +15,9 @@
       font-size: 4rem;
       font-weight: 300;
       letter-spacing: 1rem;
+      @include respond(phone) {
+        font-size: 3.6rem;
+      }
     }
   }
 }

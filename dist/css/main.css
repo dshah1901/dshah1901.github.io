@@ -90,9 +90,8 @@ img {
     letter-spacing: 1.5rem; }
     @media (max-width: 37.5em) {
       .heading-primary--name {
-        letter-spacing: 0.5rem;
         margin-top: 15rem;
-        font-size: 7rem; } }
+        font-size: 5rem; } }
   .heading-primary--sub {
     display: block;
     font-weight: 300;
@@ -102,7 +101,7 @@ img {
     @media (max-width: 37.5em) {
       .heading-primary--sub {
         letter-spacing: 0;
-        font-size: 2rem; } }
+        font-size: 1.5rem; } }
   .heading-primary--description {
     display: block;
     font-weight: 300;
@@ -111,8 +110,8 @@ img {
     letter-spacing: 5px; }
     @media (max-width: 37.5em) {
       .heading-primary--description {
-        letter-spacing: 2px;
-        font-size: 1.2rem; } }
+        letter-spacing: 1px;
+        font-size: 1rem; } }
 
 .heading-secondary {
   display: block;
@@ -343,6 +342,9 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center; }
+  @media (max-width: 37.5em) {
+    .showcase__content {
+      margin-top: 10rem; } }
   .showcase__content .heading-primary--name {
     padding: 5rem 0 3rem 0;
     animation: heading 2s; }
@@ -393,7 +395,8 @@ img {
   grid-template-columns: repeat(4, 1fr); }
   @media (max-width: 37.5em) {
     .about .skills {
-      grid-template-columns: repeat(3, 1fr); } }
+      grid-template-columns: repeat(4, 1fr);
+      margin: 0 5rem; } }
   .about .skills__images {
     margin: auto; }
     .about .skills__images img {
@@ -402,6 +405,9 @@ img {
       width: 7rem;
       filter: grayscale(100%);
       transition: all 0.3s; }
+      @media (max-width: 37.5em) {
+        .about .skills__images img {
+          width: 4rem; } }
       .about .skills__images img:hover {
         filter: grayscale(0%);
         transform: scale(1.05); }
@@ -496,6 +502,9 @@ img {
     font-size: 4rem;
     font-weight: 300;
     letter-spacing: 1rem; }
+    @media (max-width: 37.5em) {
+      .cv__content--heading {
+        font-size: 3.6rem; } }
 
 .items {
   display: grid;
