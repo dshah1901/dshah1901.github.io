@@ -19,7 +19,6 @@
     justify-content: center;
     grid-template-columns: repeat(4, 1fr);
     @include respond(phone) {
-      grid-template-columns: repeat(4, 1fr);
       margin: 0 5rem;
     }
     &__images {

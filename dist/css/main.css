@@ -190,7 +190,7 @@ img {
 
 .btn:active, .btn:focus {
   outline: none;
-  transform: translateY(-1px);
+  transform: translateY(-2px);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
 
 .btn--light {
@@ -395,7 +395,6 @@ img {
   grid-template-columns: repeat(4, 1fr); }
   @media (max-width: 37.5em) {
     .about .skills {
-      grid-template-columns: repeat(4, 1fr);
       margin: 0 5rem; } }
   .about .skills__images {
     margin: auto; }
@@ -599,44 +598,10 @@ img {
     opacity: 0.8;
     margin: 0; }
 
-#contact .form-control {
-  position: relative;
-  width: 300px;
-  margin: 4rem auto; }
-  #contact .form-control input {
-    background-color: transparent;
-    border: 0;
-    border-bottom: 2px #67aeca solid;
-    display: block;
-    width: 100%;
-    padding: 1rem 9px;
-    font-size: 1.8rem;
-    font-family: "Montserrat", sans-serif;
-    color: #67aeca; }
-    #contact .form-control input:focus, #contact .form-control input:valid {
-      outline: 0;
-      border-bottom-color: #1e7597; }
-    #contact .form-control input:focus + label span,
-    #contact .form-control input:valid + label span {
-      color: black;
-      transform: translateY(-30px); }
-  #contact .form-control label {
-    position: absolute;
-    top: 15px;
-    font-size: 1.8rem;
-    color: #1e7597;
-    font-family: "Montserrat", sans-serif;
-    left: 0;
-    pointer-events: none; }
-    #contact .form-control label span {
-      display: inline-block;
-      min-width: 5px;
-      transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
-
 #main-footer {
   background: #0a192f;
-  color: #fff;
-  height: 16rem;
+  color: #ffff;
+  height: 17rem;
   letter-spacing: 2px; }
   @media (max-width: 37.5em) {
     #main-footer {
@@ -644,7 +609,7 @@ img {
   #main-footer .elevator {
     cursor: pointer;
     text-align: center;
-    padding: 1rem 0; }
+    padding: 2rem 0; }
     #main-footer .elevator a {
       color: #bdbdbd;
       transition: all 0.25s; }
@@ -683,7 +648,6 @@ img {
   padding: 6rem 0; }
 
 .section-projects {
-  background: #ffff;
   padding: 10rem 0; }
 
 .section-contactform {

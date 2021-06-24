@@ -1,7 +1,7 @@
 #main-footer {
   background: $colour-primary-dark;
-  color: #fff;
-  height: 16rem;
+  color: $colour-white;
+  height: 17rem;
   letter-spacing: 2px;
   @include respond(phone) {
     height: 23rem;
@@ -10,7 +10,7 @@
   .elevator {
     cursor: pointer;
     text-align: center;
-    padding: 1rem 0;
+    padding: 2rem 0;
     a {
       color: $colour-medium-grey;
       transition: all 0.25s;
