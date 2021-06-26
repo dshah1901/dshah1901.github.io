@@ -1,7 +1,7 @@
 .items {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1rem;
+  grid-gap: 1.5rem;
 
   @include respond(phone) {
     grid-template-columns: repeat(1, 1fr);
