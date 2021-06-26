@@ -620,7 +620,7 @@ img {
   letter-spacing: 2px; }
   @media (max-width: 37.5em) {
     #main-footer {
-      height: 24rem; } }
+      height: 26rem; } }
   #main-footer .elevator {
     cursor: pointer;
     text-align: center;
