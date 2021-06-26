@@ -90,7 +90,7 @@ img {
     @media (max-width: 37.5em) {
       .heading-primary--name {
         margin-top: 15rem;
-        font-size: 5rem; } }
+        font-size: 6rem; } }
   .heading-primary--sub {
     display: block;
     font-weight: 300;
@@ -100,7 +100,7 @@ img {
     @media (max-width: 37.5em) {
       .heading-primary--sub {
         letter-spacing: 0;
-        font-size: 1.5rem; } }
+        font-size: 1.8rem; } }
   .heading-primary--description {
     display: block;
     font-weight: 300;
@@ -110,7 +110,7 @@ img {
     @media (max-width: 37.5em) {
       .heading-primary--description {
         letter-spacing: 1px;
-        font-size: 1rem; } }
+        font-size: 1.2rem; } }
 
 .heading-secondary {
   display: block;
