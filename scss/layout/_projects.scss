@@ -13,10 +13,28 @@
   }
 }
 
+.items-single {
+  display: block;
+  margin: auto;
+  margin-top: 1.5rem;
+  width: 36rem;
+  @include respond(phone) {
+    margin-top: 5rem;
+    width: 35rem;
+  }
+  @include respond(tab-port) {
+    width: 45rem;
+    height: 25rem;
+  }
+}
+
 .item {
   position: relative;
   background: $colour-secondary;
   overflow: hidden;
+  &-single {
+    margin-left: 10rem;
+  }
   @include respond(phone) {
     margin: auto;
     width: 35rem;

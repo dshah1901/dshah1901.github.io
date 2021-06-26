@@ -518,10 +518,26 @@ img {
       grid-template-columns: repeat(1, 1fr);
       grid-gap: 5rem; } }
 
+.items-single {
+  display: block;
+  margin: auto;
+  margin-top: 1.5rem;
+  width: 36rem; }
+  @media (max-width: 37.5em) {
+    .items-single {
+      margin-top: 5rem;
+      width: 35rem; } }
+  @media (max-width: 56.25em) {
+    .items-single {
+      width: 45rem;
+      height: 25rem; } }
+
 .item {
   position: relative;
   background: #67aeca;
   overflow: hidden; }
+  .item-single {
+    margin-left: 10rem; }
   @media (max-width: 37.5em) {
     .item {
       margin: auto;
