@@ -613,6 +613,9 @@ img {
     opacity: 0.8;
     margin: 0; }
 
+#contact .text {
+  padding: 0 5rem; }
+
 #main-footer {
   background: #0a192f;
   color: #ffff;
