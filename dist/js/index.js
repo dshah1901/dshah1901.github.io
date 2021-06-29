@@ -35,7 +35,3 @@ window.onscroll = function(){
         scrolled= false;
     }
 };
-
-//Changing active class
-
-
