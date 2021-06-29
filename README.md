@@ -8,7 +8,7 @@
   My personal website <a href="https://dshah1901.github.io/" target="_blank">dshah1901.github.io</a> built with <a href="https://sass-lang.com/" target="_blank">Scss</a> and hosted with <a href="https://pages.github.com/" target="_blank">Github Pages</a>
 </p>
 
-![demo](dist/images/screencapture-dshah1901-github-io.png)
+![demo](https://user-images.githubusercontent.com/73872595/123562737-ba2e5700-d804-11eb-958b-7ce72579bc76.jpg)
 
 ## 🛠 Installation & Set Up
 
